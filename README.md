@@ -11,14 +11,15 @@ A simple weather app built using SwiftUI that displays the current weather and f
 
 ## Screenshots
 
-### Day Mode
+### -->Day Mode
 
-<img width="380" alt="Screenshot 2567-06-26 at 18 01 42" src="https://github.com/Sandalu01/Whether-App/assets/108582011/89aa3d8e-30a3-4d8b-bf21-9a57cdbae90e">
+   --------------------<img width="380" alt="Screenshot 2567-06-26 at 18 01 42" src="https://github.com/Sandalu01/Whether-App/assets/108582011/89aa3d8e-30a3-4d8b-bf21-9a57cdbae90e">
 
 
-### Night Mode
+### -->Night Mode
 
-![Night Mode](path/to/Screenshot%202567-06-26%20at%2018.02.34.png)
+   --------------------<img width="371" alt="Screenshot 2567-06-26 at 18 02 34" src="https://github.com/Sandalu01/Whether-App/assets/108582011/c368c0b5-c294-4587-b5e7-52de393ec758">
+
 
 ## Requirements
 
