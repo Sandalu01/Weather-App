@@ -13,7 +13,8 @@ A simple weather app built using SwiftUI that displays the current weather and f
 
 ### Day Mode
 
-![Day Mode](path/to/Screenshot%202567-06-26%20at%2018.01.42.png)
+<img width="380" alt="Screenshot 2567-06-26 at 18 01 42" src="https://github.com/Sandalu01/Whether-App/assets/108582011/89aa3d8e-30a3-4d8b-bf21-9a57cdbae90e">
+
 
 ### Night Mode
 
