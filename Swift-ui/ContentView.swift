@@ -25,31 +25,37 @@ struct ContentView: View {
 //                    .background(Color.red)
 //                    .frame(width: 200,height: 200)
                 
-                MainStatusExtractedView(image:isNight ? "sparkles": "cloud.sun.bolt.fill", temp: 26)
+                MainStatusExtractedView(image:isNight ? "moon.stars.fill": "cloud.sun.bolt.fill", temp:isNight ? 20 : 26 ,color:isNight ? .white : .black)
 //                Spacer()
                 
                 HStack(spacing:20){
                     
                     whetherdayView(dayofweek: "Tue",
-                                   imageName:isNight ? "sparkles" : "cloud.sun.rain.fill",
-                                   temparate: 15)
+                                   imageName:isNight ? "sparkles" : "cloud.rainbow.half.fill",
+                                   temparate:isNight ? 15 : 26,
+                                   color: isNight ? .white : .black
+                    )
                     
                     
                     whetherdayView(dayofweek: "Wed",
-                                   imageName:"sun.snow.fill",
-                                   temparate: 24)
+                                   imageName:isNight ? "cloud.moon.bolt.fill":"cloud.heavyrain.fill",
+                                   temparate:isNight ? 10 : 34,
+                                   color: isNight ? .white : .black)
                     
                     whetherdayView(dayofweek: "Thu",
-                                   imageName:"cloud.sun.bolt.fill",
-                                   temparate: 17)
+                                   imageName:isNight ? "moon.fill":"thermometer.sun.fill",
+                                   temparate:isNight ? 24 : 36,
+                                   color: isNight ? .white : .black)
                     
                     whetherdayView(dayofweek: "Fri",
-                                   imageName:"thermometer.sun.fill",
-                                   temparate: 54)
+                                   imageName:isNight ? "moon.haze.fill":"cloud.sun.bolt.fill",
+                                   temparate:isNight ? 30 : 34,
+                                   color: isNight ? .white : .black)
                     
                     whetherdayView(dayofweek: "Sat",
-                                   imageName:"cloud.rainbow.half.fill",
-                                   temparate: 20)
+                                   imageName:isNight ? "cloud.moon.rain.fill":"cloud.sun.rain.fill",
+                                   temparate:isNight ? 12 : 20,
+                                   color: isNight ? .white : .black )
         
                     
                 }
@@ -88,13 +94,14 @@ struct whetherdayView: View {
     var dayofweek:String
     var imageName:String
     var temparate:Int
+    var color :Color
     
      
     var body: some View {
         VStack{
             Text(dayofweek)
                 .font(.system(size: 20,weight:.medium,design: .rounded))
-                .foregroundStyle(.black)
+                .foregroundStyle(color)
             
             Image(systemName: imageName)
                 .renderingMode(.original)
@@ -103,7 +110,7 @@ struct whetherdayView: View {
                 .frame(width: 40 ,height: 40)
             Text("\(temparate)°")
                 .font(.system(size: 20,weight: .medium))
-                .foregroundStyle(.black)
+                .foregroundStyle(color)
             
         }
     }
@@ -142,6 +149,7 @@ struct MainStatusExtractedView: View {
     
     var image :String
     var temp : Int
+    var color:Color
     
     
     var body: some View {
@@ -155,7 +163,7 @@ struct MainStatusExtractedView: View {
             
             Text("\(temp)°c")
                 .font(.system(size: 50,weight:.medium ))
-                .foregroundStyle(.black)
+                .foregroundStyle(color)
             
             
         }
