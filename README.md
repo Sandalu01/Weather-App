@@ -31,5 +31,5 @@ A simple weather app built using SwiftUI that displays the current weather and f
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/Whether-App.git
+   git clone https://github.com/ySandalu01/Whether-App.git
 
